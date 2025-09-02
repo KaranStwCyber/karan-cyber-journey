@@ -1,0 +1,68 @@
+👉 A variable is the name given to a memory location in a program.
+-> for example: 
+-> a = 30
+-> b = "Karan"
+
+-> variables = container to store a value.
+-> keywords = reserved words in python.
+
+👉 Data Types
+-> Primarily there are following data types in python:
+(i) Integers
+(ii) Strings
+(iii) Float
+(iv) boolean
+(v) None
+
+-> python is an excellent language that automatically identifies the type of data for us.
+a = 71 -> identifies as integer
+b = "Karan" -> identifies as string.
+
+👉 Rules for defining a variable name:-
+
+-> Also applies to other identifiers.
+-> A variable name can contain alphabets, digits, and underscores.
+-> A variable name can't start with a number.
+-> No white space is allowed to be used inside a variable name.
+-> Example:- Karan, seven, a, xenon, _karan, etc.
+
+👉 Operators in Python
+
+-> Following are some common operators in python.
+
+(i) Arithmetic operators -: +, -, *, /,etc
+(ii) Assignment operators-: =, +=, -=, etc.
+(iii) Comparsion operators-: ==, >,>=,<,<=,!=,etc.
+(iv) Logical opeators-: and, or , not.
+
+👉 Type () function and Typecasting:-
+
+-> Type function is used to find the data type of a given variable in python.
+
+a = 30
+type(a) -> class <int>
+
+b = "96"
+type(b) -> class <str>
+
+c = 90
+type(c -> class <int>
+
+-> A number can be converted into a string and vice versa( if possible). There are many functions to convert one data  type to another.
+
+str(32) = "32" integer to string
+float(32) = 32.0 integer to float
+int("32") = 32 string to integer
+
+👉 Input functions
+
+-> This function allows us to take the input from user as a string, we can convert its type as we want the input.
+
+a = input("Enter your name: ")
+
+-> It is important to note that the output of input is always a string (even if the number is entered).
+
+-> If a is "Karan" and b is "Satyawali" if we do a + b we will get "Karan Satyawali".
+
+👉 Thats's it for variables and data types make sure to understand it as it is used in all over python later. 
+👉 Check my linkedIn from my profile.
