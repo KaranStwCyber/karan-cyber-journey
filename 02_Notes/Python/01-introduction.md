@@ -1,0 +1,26 @@
+# 🐍 Introduction to Python
+
+## 1. What is Python?
+- Python is a **high-level**, **interpreted**, **object-oriented** programming language.
+- Created by **Guido van Rossum** in 1991.
+- Focuses on **simplicity** and **readability**.
+- Widely used in:
+  - Web Development (Django, Flask)
+  - Data Science (Pandas, NumPy, Matplotlib)
+  - Machine Learning & AI (TensorFlow, PyTorch, Scikit-learn)
+  - Automation & Scripting
+  - Game Development
+  - IoT and Embedded Systems
+
+---
+
+## 2. Why Learn Python?
+✅ Easy to learn, beginner-friendly syntax  
+✅ Huge community + tons of libraries  
+✅ Works across platforms (Windows, Mac, Linux)  
+✅ In-demand skill in job market  
+
+Example (hello world program):
+
+```python
+print("Hello, World!")
