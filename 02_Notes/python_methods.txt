@@ -1,0 +1,221 @@
+🔹 1. String Methods
+
+s = "  Python is Fun!  "
+
+✅ Case Methods:
+
+s.upper() → " PYTHON IS FUN! "
+
+s.lower() → " python is fun! "
+
+s.title() → " Python Is Fun! "
+
+s.capitalize() → " python is fun! "
+
+s.swapcase() → " pYTHON IS fUN! "
+
+👉 Think: these control the “appearance” (upper/lower caps).
+
+✅ Trim/Check:
+
+s.strip() → removes spaces → "Python is Fun!"
+
+s.lstrip() / s.rstrip() → left/right spaces only
+
+s.startswith("Py")
+
+s.endswith("!")
+
+👉 Think: used to align string/ or we can say that we can check if the string starts or ends with word.
+
+✅ Find/Replace:
+
+s.find("Fun") → index or -1
+
+s.index("Fun") → index or error
+
+s.replace("Fun", "Awesome")
+
+👉 Think: can be used to find index of word in string yiu want to search/ can be used to replace old string to new.
+
+✅ Split/Join:
+
+s.split(" ") → ['Python', 'is', 'Fun!']
+
+" ".join(["I", "love", "Python"]) → "I love Python"
+
+👉 used in splitting and joining we can set seperator.
+
+✅ Other:
+
+s.count("n") → count of char
+
+s.isalpha(), s.isdigit(), s.isalnum(), s.isspace(), s.islower(), s.isupper().
+
+
+
+🔹 2. List Methods
+
+ 👉 Lists are mutable → methods modify the list in place.
+
+ lst = [1, 2, 3, 2]
+
+
+✅  Add/Remove:
+
+lst.append(4) → [1,2,3,2,4]
+
+lst.insert(1, 10) → [1,10,2,3,2,4]
+
+lst.extend([5,6]) → adds multiple
+
+lst.remove(2) → removes first 2
+
+lst.pop() → removes last → returns it
+
+lst.pop(1) → removes index 1
+
+✅ Search/Count:
+
+lst.index(3) → 2
+
+lst.count(2) → 2
+
+✅ Sort/Reverse:
+
+lst.sort() → ascending sort
+
+lst.sort(reverse=True) → descending
+
+lst.reverse() → reverse order
+
+✅ Copy/Clear:
+
+lst.copy() → new copy
+
+lst.clear() → empty list
+
+🔹 3. Tuple Methods
+
+Tuples are immutable → only a few methods.
+
+t = (1, 2, 2, 3)
+
+
+t.count(2) → 2
+
+t.index(3) → 3
+
+🔹 4. Set Methods
+
+Sets = unordered, unique values.
+
+s1 = {1,2,3}
+s2 = {3,4,5}
+
+✅ Add/Remove:
+
+s1.add(4)
+
+s1.remove(2) → error if missing
+
+s1.discard(99) → no error
+
+s1.pop() → random element removed
+
+s1.clear() → empty
+
+✅ Set Operations:
+
+s1.union(s2) → {1,2,3,4,5}
+
+s1.intersection(s2) → {3}
+
+s1.difference(s2) → {1,2}
+
+s1.symmetric_difference(s2) → {1,2,4,5}
+
+✅ Subset/Superset:
+
+s1.issubset(s2)
+
+s1.issuperset(s2)
+
+s1.isdisjoint(s2)
+
+🔹 5. Dictionary Methods
+
+Dict = key-value pairs.
+
+d = {"name": "Karan", "age": 22}
+
+✅ Access:
+
+d.get("name") → "Karan"
+
+d.keys() → dict_keys([...])
+
+d.values() → dict_values([...])
+
+d.items() → dict_items([...])
+
+✅ Update/Remove:
+
+d.update({"age": 23})
+
+d.pop("age") → removes key
+
+d.popitem() → removes last key-value
+
+d.clear() → empty
+
+✅ Copy:
+
+d.copy()
+
+🔹 6. File Methods
+
+f = open("file.txt", "w")
+f.write("hello")
+f.close()
+
+✅ Modes: "r", "w", "a", "rb", "wb".
+
+f.read(), f.readline(), f.readlines().
+
+f.write("text").
+
+f.close().
+
+Better → with open(...) as f: (auto close).
+
+🔹 7. Class & Object Methods
+
+class Car:
+    wheels = 4   # class variable
+    
+    def __init__(self, brand):
+        self.brand = brand   # instance variable
+
+    def show(self):   # instance method
+        print(f"Car: {self.brand}")
+
+    @classmethod
+    def info(cls):    # class method
+        print(f"All cars have {cls.wheels} wheels")
+
+    @staticmethod
+    def greet():      # static method
+        print("Welcome to Car Showroom!")
+
+c1 = Car("Tesla")
+c1.show()       # Tesla
+Car.info()      # All cars have 4 wheels
+Car.greet()     # Welcome to Car Showroom!
+
+✅ Instance methods → use self → object data.
+
+✅ Class methods → use cls → class data.
+
+✅ Static methods → no self/cls → utility function inside class.
+
