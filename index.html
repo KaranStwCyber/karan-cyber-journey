@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan's Elite Cybersecurity Roadmap (2025-2028)</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --warning: #f39c12;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.25rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .card h4 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+        
+        ul, ol {
+            padding-left: 1.5rem;
+            margin: 0.75rem 0;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .checklist li:before {
+            content: "☑";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+        }
+        
+        .completed:before {
+            content: "✓";
+            color: var(--success);
+        }
+        
+        .phase {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        .phase:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--secondary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        .highlight {
+            background-color: rgba(52, 152, 219, 0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+            margin: 1rem 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: var(--dark);
+            padding: 1rem;
+            background-color: rgba(236, 240, 241, 0.5);
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: var(--dark);
+            font-size: 0.9rem;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 0.3em;
+        }
+        
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        
+        .tab-container {
+            margin: 1.5rem 0;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+        
+        .tab {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab.active {
+            border-bottom: 3px solid var(--secondary);
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="emoji">🚀</span> KARAN'S ELITE CYBERSECURITY ROADMAP (2025-2028)</h1>
+            <p class="subtitle">"From BCA Student to Top 1% AI Security Expert"</p>
+        </header>
+        
+        <div class="section">
+            <h2><span class="emoji">🎯</span> FINAL PROGRAMMING LANGUAGE ORDER</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>MANDATORY (Learn During 3 Years)</h4>
+                    <ul>
+                        <li>Python → Your #1 weapon (Start Month 1)</li>
+                        <li>Bash → Linux automation & scripting</li>
+                        <li>JavaScript → Web security & AI interfaces</li>
+                        <li>SQL → Database security & injection</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>OPTIONAL (After First Job)</h4>
+                    <ul>
+                        <li>C/C++ → Exploit development</li>
+                        <li>Assembly → Deep reverse engineering</li>
+                        <li>Rust → Modern secure systems</li>
+                        <li>Go → Cloud security tools</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight">
+                <strong>⚡ Focus Rule:</strong> Master 1 language completely before starting next
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">📅</span> PHASE 1: FOUNDATIONS & JOB READINESS (Aug 2025 → Dec 2026)</h2>
+            
+            <div class="phase">
+                <h3><span class="emoji">🏁</span> Month 1-2: Setup & Fundamentals</h3>
+                <h4>Setup Checklist:</h4>
+                <ul class="checklist">
+                    <li>[ ] Ubuntu VM/Dual Boot ✅</li>
+                    <li>[ ] GitHub Account: karan-cyber-journey repo</li>
+                    <li>[ ] Accounts: TryHackMe, HackTheBox, Coursera, AWS Free Tier</li>
+                    <li>[ ] Tools: VS Code, Git, Python, Burp Suite, Wireshark</li>
+                </ul>
+                
+                <h4>Core Learning:</h4>
+                <div class="grid">
+                    <div class="card">
+                        <h4>Python Basics (2 hours/day)</h4>
+                        <ul>
+                            <li>Tutorial: Python for Everybody (py4e.com)</li>
+                            <li>Practice: HackerRank Python</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Linux Fundamentals</h4>
+                        <ul>
+                            <li>Tutorial: Linux Journey</li>
+                            <li>Practice: OverTheWire Bandit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase">
+                <h3><span class="emoji">🎓</span> Month 3-6: Core Security Skills</h3>
+                <h4>Priority #1: Get Certified</h4>
+                <ul>
+                    <li>Google Cybersecurity Professional Certificate</li>
+                    <li>Platform: Coursera</li>
+                    <li>Duration: 3-6 months</li>
+                    <li>Cost: ~₹3,000/month (Financial aid available)</li>
+                </ul>
+                
+                <div class="grid">
+                    <div class="card">
+                        <h4>Network Security:</h4>
+                        <ul>
+                            <li>Networking: Cisco NetAcad (Free)</li>
+                            <li>Wireshark: Official Tutorials</li>
+                            <li>Nmap: Nmap Book</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Web Application Security:</h4>
+                        <ul>
+                            <li>PortSwigger Web Security Academy: Free Labs</li>
+                            <li>OWASP Top 10: Official Guide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase">
+                <h3><span class="emoji">🔧</span> Month 7-12: Hands-On Practice</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h4>SOC Analyst Skills:</h4>
+                        <ul>
+                            <li>TryHackMe SOC Level 1 Path: Complete Path</li>
+                            <li>Splunk Fundamentals: Free Course</li>
+                            <li>MITRE ATT&CK Framework: Official Site</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Scripting & Automation:</h4>
+                        <ul>
+                            <li>Bash Scripting: Linux Command Line Book</li>
+                            <li>Python for Security: Build 5 security tools</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h4>MANDATORY PROJECTS (Phase 1):</h4>
+                <ul>
+                    <li>Network Scanner (Python + Nmap)</li>
+                    <li>Log Analyzer (Python + Bash)</li>
+                    <li>Vulnerability Assessment Report (Web app)</li>
+                    <li>Incident Response Playbook (Documentation)</li>
+                    <li>Home Lab Setup (Document everything)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">⚔️</span> PHASE 2: COMPETITIVE EDGE (Jan 2027 → Dec 2027)</h2>
+            
+            <div class="phase">
+                <h3><span class="emoji">🎯</span> Specialization Foundation</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h4>Cloud Security Mastery:</h4>
+                        <ul>
+                            <li>AWS Security: AWS SkillBuilder (Free)</li>
+                            <li>Azure Security: Microsoft Learn</li>
+                            <li>Container Security: Kubernetes, Docker security</li>
+                            <li>DevSecOps: GitHub Actions, SAST/DAST tools</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Advanced Web Security:</h4>
+                        <ul>
+                            <li>Advanced PortSwigger Labs: Complete all practitioner level</li>
+                            <li>Bug Bounty Basics: Hacker101</li>
+                            <li>SSRF, XXE, Deserialization attacks</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>AI Security Basics:</h4>
+                        <ul>
+                            <li>AI/ML Security: Adversarial Robustness Toolbox</li>
+                            <li>LLM Security: Prompt injection, jailbreaking</li>
+                            <li>AI Ethics & Governance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase">
+                <h3><span class="emoji">🏆</span> Advanced Skills:</h3>
+                <ul>
+                    <li>Threat Hunting & IR:
+                        <ul>
+                            <li>YARA Rules: Official Docs</li>
+                            <li>Sigma Rules: SigmaHQ</li>
+                            <li>Digital Forensics: Basic disk & memory analysis</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4>MANDATORY PROJECTS (Phase 2):</h4>
+                <ul>
+                    <li>Cloud Security Assessment Tool (Python + AWS API)</li>
+                    <li>AI Model Adversarial Testing framework</li>
+                    <li>SIEM Rule Creation (Splunk/Elastic)</li>
+                    <li>Container Security Pipeline (DevSecOps)</li>
+                    <li>Threat Hunting Dashboard (Python + visualization)</li>
+                </ul>
+                <p><strong>Target Salary: ₹6-12 LPA</strong></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🏆</span> PHASE 3: ELITE AI SECURITY EXPERT (Jan 2028 → Dec 2028+)</h2>
+            
+            <div class="phase">
+                <h3><span class="emoji">🧠</span> AI Security Specialization (70% Focus)</h3>
+                <h4>Core Expertise Areas:</h4>
+                <ul>
+                    <li>LLM Security Architecture</li>
+                    <li>AI Model Adversarial Attacks & Defense</li>
+                    <li>AI Supply Chain Security</li>
+                    <li>MLOps Security</li>
+                    <li>AI Governance Frameworks</li>
+                </ul>
+                
+                <h4>Advanced Tools & Frameworks:</h4>
+                <ul>
+                    <li>Adversarial Attacks: ART, Cleverhans, Foolbox</li>
+                    <li>Model Security: MLflow Security, Kubeflow Security</li>
+                    <li>AI Red Teaming: Custom frameworks</li>
+                    <li>AI Forensics: Model behavior analysis</li>
+                </ul>
+                
+                <h4>Research & Innovation:</h4>
+                <ul>
+                    <li>Original Research: Publish 2-3 papers on AI security</li>
+                    <li>Tool Development: Create novel AI security tools</li>
+                    <li>CVE Discoveries: Find vulnerabilities in AI systems</li>
+                    <li>Conference Speaking: Present at AI/Security conferences</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h3><span class="emoji">☁️</span> Cloud Security Foundation (30% Focus)</h3>
+                <ul>
+                    <li>Multi-cloud Security Architecture</li>
+                    <li>Cloud-native AI Security</li>
+                    <li>Serverless Security</li>
+                    <li>Zero-trust Cloud Architectures</li>
+                </ul>
+                
+                <h4>ELITE PROJECTS (Phase 3):</h4>
+                <ul>
+                    <li>AI Model Security Scanner (Commercial-grade tool)</li>
+                    <li>LLM Jailbreak Detection System</li>
+                    <li>Cloud AI Security Framework</li>
+                    <li>Research Paper: "Novel Attack Vectors on AI Systems"</li>
+                    <li>Open Source Contribution: Major AI security project</li>
+                </ul>
+                <p><strong>Target Salary: ₹25-50+ LPA (Top 1% range)</strong></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">💼</span> CAREER PROGRESSION STRATEGY</h2>
+            <h3><span class="emoji">🎯</span> Job Targeting Timeline:</h3>
+            
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active" onclick="openTab(event, 'years1-2')">Years 1-2</div>
+                    <div class="tab" onclick="openTab(event, 'years3-4')">Years 3-4</div>
+                    <div class="tab" onclick="openTab(event, 'years4plus')">Years 4+</div>
+                </div>
+                
+                <div id="years1-2" class="tab-content active">
+                    <p><strong>Entry Level (₹3-8 LPA)</strong></p>
+                    <h4>Target Roles:</h4>
+                    <ul>
+                        <li>SOC Analyst L1/L2</li>
+                        <li>Junior Security Analyst</li>
+                        <li>Cybersecurity Associate</li>
+                        <li>Cloud Security Associate</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>SIEM, incident response</li>
+                        <li>Vulnerability assessment</li>
+                        <li>Cloud basics</li>
+                    </ul>
+                </div>
+                
+                <div id="years3-4" class="tab-content">
+                    <p><strong>Mid-Level (₹8-18 LPA)</strong></p>
+                    <h4>Target Roles:</h4>
+                    <ul>
+                        <li>Security Engineer</li>
+                        <li>Cloud Security Engineer</li>
+                        <li>DevSecOps Engineer</li>
+                        <li>Threat Hunter</li>
+                    </ul>
+                    <h4>Key Skills:</h4>
+                    <ul>
+                        <li>Advanced cloud security</li>
+                        <li>Automation</li>
+                        <li>Threat hunting</li>
+                        <li>AI security basics</li>
+                    </ul>
+                </div>
+                
+                <div id="years4plus" class="tab-content">
+                    <p><strong>Senior Level (₹18-50+ LPA)</strong></p>
+                    <h4>Target Roles:</h4>
+                    <ul>
+                        <li>Senior AI Security Engineer</li>
+                        <li>Principal Cloud Security Architect</li>
+                        <li>AI Security Research Scientist</li>
+                        <li>Security Consultant (AI/Cloud focus)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">📚</span> PORTFOLIO & PROJECT STRATEGY</h2>
+            
+            <div class="phase">
+                <h3><span class="emoji">🏗️</span> Portfolio Structure:</h3>
+                <pre>
+GitHub Organization:
+karan-cyber-journey/
+├── security-tools/          # Custom Python tools
+├── research-papers/         # Original research
+├── lab-documentation/       # Home lab setup
+├── vulnerability-reports/   # Responsible disclosure
+├── ai-security-projects/    # AI security demos
+└── cloud-security-configs/  # Terraform, K8s configs
+                </pre>
+                
+                <h3><span class="emoji">📈</span> Skill Acquisition Strategy:</h3>
+                <ul>
+                    <li>Tutorial → Practice → Project → Document</li>
+                    <li>Teach Others (Blog, YouTube, mentoring)</li>
+                    <li>Community Contribution (Open source, CTFs)</li>
+                    <li>Real-world Application (Internships, freelancing)</li>
+                    <li>Continuous Learning (Stay updated with latest threats)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🚨</span> SUCCESS METRICS & MILESTONES</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h4>Phase 1 Metrics:</h4>
+                    <ul class="checklist">
+                        <li>[ ] Google Cybersecurity Certificate completed</li>
+                        <li>[ ] 5 security projects on GitHub</li>
+                        <li>[ ] First security job obtained</li>
+                        <li>[ ] TryHackMe Top 5% ranking</li>
+                        <li>[ ] Basic bug bounty submission</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Phase 2 Metrics:</h4>
+                    <ul class="checklist">
+                        <li>[ ] AWS/Azure security certification</li>
+                        <li>[ ] 3 advanced security tools built</li>
+                        <li>[ ] Speaking at local security meetup</li>
+                        <li>[ ] Mid-level position secured</li>
+                        <li>[ ] AI security research project completed</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Phase 3 Metrics:</h4>
+                    <ul class="checklist">
+                        <li>[ ] Original research published</li>
+                        <li>[ ] Conference talk delivered</li>
+                        <li>[ ] 10K+ GitHub stars on security tool</li>
+                        <li>[ ] Senior/Principal role secured</li>
+                        <li>[ ] Recognized AI security expert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">💡</span> DAILY ROUTINE (Recommended)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Weekdays (3 hours):</h4>
+                    <ul>
+                        <li>1.5 hours: Core learning (tutorials/courses)</li>
+                        <li>1 hour: Hands-on practice (labs/projects)</li>
+                        <li>30 minutes: Community (reading blogs, forums)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Weekends (6 hours):</h4>
+                    <ul>
+                        <li>3 hours: Project work</li>
+                        <li>2 hours: Advanced topics/research</li>
+                        <li>1 hour: Documentation/portfolio updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🎯</span> FINAL SUCCESS FORMULA</h2>
+            <div class="highlight">
+                <ul>
+                    <li>Consistency > Intensity</li>
+                    <li>Projects > Certificates</li>
+                    <li>Community > Solo Learning</li>
+                    <li>Specialization > Generalization</li>
+                </ul>
+            </div>
+            
+            <div class="quote">
+                "The best time to plant a tree was 20 years ago. The second best time is now." Start today. Execute relentlessly. Become the AI Security expert the world needs.
+            </div>
+            
+            <div class="highlight">
+                <strong>📌 Print this roadmap. Pin it to your wall. Execute daily. 🚀 Your journey to cybersecurity elite starts NOW!</strong>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Karan's Elite Cybersecurity Roadmap (2025-2028) | Last Updated: August 2024</p>
+        </div>
+    </div>
+    
+    <script>
+        // Tab functionality
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            // Remove active class from all tabs
+            const tabs = document.getElementsByClassName("tab");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            
+            // Show current tab and add active class
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+        
+        // Animate progress bars on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            
+            const animateProgressBars = () => {
+                progressBars.forEach(bar => {
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = width;
+                });
+            };
+            
+            // Set some example progress values (you can customize these)
+            document.querySelectorAll('.progress-bar').forEach((bar, index) => {
+                const widths = ['30%', '65%', '90%'];
+                bar.setAttribute('data-width', widths[index] || '50%');
+            });
+            
+            // Trigger animation when element comes into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateProgressBars();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
