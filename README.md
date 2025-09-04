@@ -30,3 +30,7 @@ Focus Areas:
 🤖 AI Security → ML model attacks, adversarial security
 
 🎯 Practical Skills → Bug Bounties, CTFs, Security Projects
+
+
+## 🏅 Certifications
+- [Tata Cybersecurity Analyst Virtual Experience (Forage)](./05_Certifications/Tata_Forage_Cybersecurity_Simulation.pdf)
