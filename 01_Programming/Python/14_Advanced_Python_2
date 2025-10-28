@@ -1,0 +1,64 @@
+#14.1 virtual environment
+
+# pip install virtualenv - it will create a virtual environment which will be isloated from our global environment we can run it by typing virtualenv name
+
+# We create a new environment using: 
+# virtualenv myprojectenv # Creates a new venv 
+# The next step after creating the virtual environment is to activate it. 
+# We can now use this virtual environment as a separate Python installation
+
+#14.2 - PIP FREEZE COMMAND - returns all the package installed in a given python environment along with the versions.
+
+# pip freeze > requirements .txt
+
+#14.3 LAMBDA FUNCTIONS
+
+def square(n):
+    return n*n
+
+print(square(56))
+
+square = lambda x: x*x
+print(square(5))
+
+sum = lambda a,b,c: a+b+c
+print(sum(4,7,9))
+
+from functools import reduce
+
+#14.4 JOIN METHOD - (STRINGS)
+
+a = ["Karan", "Rohan", "Satyawali"]
+final = "-".join(a)
+print(final)
+
+#14.5 format method - (strings)
+
+a = "{} is a good {}".format("Karan", "Boy")
+print(a)
+
+#14.6 Map, Filter and Reduce Method
+
+# (i) MAP
+l = [1,2,3,4,5]
+square = lambda x: x*x
+sqlist = map(square, l)
+print(list(sqlist))
+
+# (ii) Filter
+
+def even(n):
+    if(n%2 == 0):
+        return True
+    return False
+onlyeven = filter(even, l)
+print(list(onlyeven))
+
+# (iii) Reduce Function
+
+def sum(a,b):
+    return a+b
+
+mul = lambda x,y: x*y
+print(reduce(sum, l)) # it will sum the items in list l with the pairing of 2 numbers like 1+2=3 , 3+3=6, 6+4=10, 10+5=15
+print(reduce(mul, l))
