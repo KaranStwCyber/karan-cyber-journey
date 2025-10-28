@@ -83,36 +83,3 @@ b = int(input("Enter number 2: "))
 print("Number a is: ", a)
 print("Number b is: ", b)
 print("Sum is ", a + b)
-#practice set
-
-#1
-a = 7
-b = 4
-
-c = a + b
-print(c)
-
-#2
-a = 95
-b = 8
-print("Remainder when a is divided by b is: ", a % b)
-
-#3
-a = int(input("Enter the value of a: "))
-print(type(a))
-
-#4
-a = int(input("Enter number 1: "))
-b = int(input("Enter number 2: "))
-
-print(a>b)
-
-#5
-a = int(input("Please Enter Number 1: "))
-b = int(input("Please Enter Number 2: "))
-print("The avrage of the two sum is", (a+b)/2)
-
-#6
-a = int(input("Enter number 1"))
-b = int(input("Enter number 2"))
-print("The square of the number is", a*b)
