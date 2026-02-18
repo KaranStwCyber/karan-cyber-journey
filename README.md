@@ -27,8 +27,11 @@ Everything here reflects hands-on work.
 ## 🗂 Repository Structure
 
 01_Programming/
+<br>
 02_Labs/
+<br>
 03_Projects/
+<br>
 04_Certifications/
 
 
