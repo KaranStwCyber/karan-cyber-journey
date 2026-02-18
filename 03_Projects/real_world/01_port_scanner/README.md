@@ -1,22 +1,37 @@
 Simple TCP Port Scanner
 
-Basic port scanner built using Python sockets.
+Basic TCP port scanner built using Python sockets.
 
-It connects to a target IP/domain and checks whether selected TCP ports are open.
+Scans a target IP or domain and reports open ports.
 
-You can scan:
+Features
 
-A small list of common ports
+Scan common ports
 
-Or a custom port range
+Scan custom port range
 
-The scanner runs sequentially and uses a timeout to avoid hanging on unresponsive ports.
+Timeout handling
 
-Built to understand how TCP connections and basic network enumeration work.
+Graceful exit on Ctrl + C
 
-Run it using:
-
+Run the Script
 python port_scanner.py
 
+Example Usage
+Enter target IP or domain: 127.0.0.1
+Do you want to scan (1) common ports or (2) custom range? 2
+Enter start port: 8000
+Enter end port: 8010
 
-Only scan systems you own or have permission to test.
+
+Output:
+
+Port 8000 is OPEN
+
+Notes
+
+Sequential scanning (not multi-threaded)
+
+Large ranges may take time
+
+Only scan systems you own or have permission to test
