@@ -1,16 +1,25 @@
-# TUPLES IN PYTHON 
-# A tuple is an immutable data type in python
+# ------------------------------
+# Tuples in Python
+# ------------------------------
+# A tuple is an immutable data type (cannot be modified after creation)
 
-a = ("Karan",1, 3, 7,False)
-print(a)
-print(type(a))
+a = ("Karan", 1, 3, 7, False)
 
-#   Tuples methods
+print("Tuple:", a)
+print("Type:", type(a))
 
-a1 = (1,2,3,8,98, 5,8,98,4,7)
-print(a1)
 
-new = a1.count(98) # returns number of times 1 occurs in a
-print(new)
-new1 = a1.index(2) # will return the index of 2
-print(new1)
+# ------------------------------
+# Tuple Methods
+# ------------------------------
+
+a1 = (1, 2, 3, 8, 98, 5, 8, 98, 4, 7)
+print("Original tuple:", a1)
+
+# count(value) -> returns number of occurrences
+count_98 = a1.count(98)
+print("Count of 98:", count_98)
+
+# index(value) -> returns first index of value
+index_2 = a1.index(2)
+print("Index of 2:", index_2)
