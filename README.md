@@ -1,36 +1,118 @@
-Welcome to my Cybersecurity Mastery Journey repository!
-This is where I document my complete path from beginner → cybersecurity expert, covering everything from programming to advanced security research.
+# 🚀 Cybersecurity Learning & Research Journal
 
-I am following my custom 3-Year Cybersecurity Grandmaster Roadmap, designed to take me to the top 1% of cybersecurity professionals.
+A structured, implementation-focused documentation of my cybersecurity development while pursuing BCA.
 
-Focus Areas:
+This repository exists for one reason:
+To build real-world security skills through consistent, practical execution.
 
-🔹 Reverse Engineering & Malware Analysis
+---
 
-🔹 Cloud Security (AWS, Azure, Kubernetes)
+## 📌 Purpose
 
-🔹 AI Security & Adversarial ML
+This is not a theory dump or certificate collection.
 
-🔹 Offensive Security (Pentesting, Red Teaming)
+This repository is used to:
 
-🔹 Programming for Security & Exploit Development
+- Build and refine security tools
+- Document labs and CTF writeups
+- Practice system-level thinking (Linux, Networking, OS)
+- Explore offensive security and reverse engineering
+- Experiment with cloud and AI security concepts
+- Track measurable progress over time
 
-🔹 Bug Bounties & Security Research
+Everything here reflects hands-on work.
 
-🛠 Skills I'm Building
+---
 
-💻 Programming → Python, Bash, C/C++, Assembly, JavaScript, Rust, Go
+## 🗂 Repository Structure
 
-🌐 Networking & OS → TCP/IP, Linux, Windows, Active Directory
+01_Programming/
+02_Labs/
+03_Projects/
+04_Certifications/
 
-🔐 Security Domains → Web Security, Exploit Development, Reverse Engineering
 
-☁️ Cloud Security → AWS, Azure, Kubernetes
+---
 
-🤖 AI Security → ML model attacks, adversarial security
+## 🎯 Current Focus (Phase 1 – Foundations)
 
-🎯 Practical Skills → Bug Bounties, CTFs, Security Projects
+- Linux command-line mastery
+- Deep understanding of TCP/IP, DNS, HTTP
+- Python for automation and tooling
+- Bandit / TryHackMe lab documentation
+- Building small but efficient security utilities
+- Writing clean, structured technical documentation
 
+---
+
+## 💻 Technical Stack
+
+### Languages
+- Python
+- C / C++
+- Bash
+- JavaScript
+- Rust (currently learning)
+
+### Core Domains
+- Networking fundamentals & packet analysis
+- Linux internals
+- Web security (OWASP Top 10 concepts)
+- Active Directory basics
+- Reverse engineering foundations
+
+---
+
+## 🔬 Active Projects
+
+| Project | Objective | Status |
+|----------|------------|--------|
+| TCP Port Scanner v1.0 | Understand socket programming & scanning logic | ✅ Completed |
+| Bandit Writeups | Linux fundamentals & privilege escalation basics | 🔄 Ongoing |
+| Multithreaded Port Scanner | Improve performance & concurrency handling | ⏳ Planned |
+
+---
+
+## 🧠 3-Phase Development Roadmap
+
+### Phase 1 — Foundations
+Programming, Linux, Networking, Core Web Security
+
+### Phase 2 — Offensive & Reverse Engineering
+Exploit development, malware analysis, advanced labs
+
+### Phase 3 — Advanced Security & Research
+Cloud security, AI security experimentation, larger-scale tooling
+
+Progress is documented through projects and lab writeups.
+
+---
 
 ## 🏅 Certifications
-- [Tata Cybersecurity Analyst Virtual Experience (Forage)](./05_Certifications/Tata_Forage_Cybersecurity_Simulation.pdf)
+
+- Tata Cybersecurity Analyst Virtual Experience (Forage)
+
+---
+
+## 📈 Weekly Execution Rules
+
+- 2–4 focused hours daily
+- Minimum 1 practical output per week
+- No learning without implementation
+- Continuous refactoring of previous work
+- Public documentation of major milestones
+
+---
+
+## 🎯 Long-Term Direction
+
+Develop strong, implementation-level capability in:
+
+- Offensive Security
+- Reverse Engineering
+- Cloud Security
+- Security Research
+
+This repository serves as public proof of skill development.
+
+Growth is demonstrated through artifacts, not statements.
