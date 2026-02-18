@@ -1,36 +1,63 @@
-#strings
+# ------------------------------
+# Strings - Basics
+# ------------------------------
 
 name = "Karan"
 name1 = 'karan1'
 name2 = '''karan2'''
 
-#string slicing
+print(name)
+print(name1)
+print(name2)
+
+
+# ------------------------------
+# String Slicing
+# ------------------------------
 
 name3 = "karan3"
 
-nameshort = name3[0:5] # start from index 0 all the way till 5 (excluding 5)
-print(nameshort)
+nameshort = name3[0:5]  # from index 0 to 4
+print("Slice 0:5 ->", nameshort)
 
 character1 = name3[1]
-print(character1)
+print("Character at index 1 ->", character1)
 
 
-# slicing with skip value
-b = "abcdefghijklmnopqrstuvwxyz"
-b[1:6:2] #bdf
+# ------------------------------
+# Slicing with Step (Skip Value)
+# ------------------------------
 
-# string functions
-#len:- gives lenth of the string
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+result = alphabet[1:6:2]
+print("Slice 1:6:2 ->", result)
+
+
+# ------------------------------
+# String Functions
+# ------------------------------
+
 name = "karan"
-print(len(name))
-print(name.endswith("ran"))
-print(name.startswith("kar"))
-print(name.capitalize())
 
-name1 = str(123)
-print(f'"{name1}"')
+print("Length:", len(name))
+print("Ends with 'ran':", name.endswith("ran"))
+print("Starts with 'kar':", name.startswith("kar"))
+print("Capitalized:", name.capitalize())
 
-#escape sequence characters
 
-a = "karan is a good boy\nbut not a bad \"boy\""
-print(a)
+# ------------------------------
+# Type Conversion to String
+# ------------------------------
+
+number = 123
+number_str = str(number)
+print("Converted to string:", number_str)
+print("Type:", type(number_str))
+
+
+# ------------------------------
+# Escape Sequence Characters
+# ------------------------------
+
+text = "karan is a good boy\nbut not a bad \"boy\""
+print(text)
