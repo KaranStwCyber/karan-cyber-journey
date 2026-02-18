@@ -1,36 +1,52 @@
-# Lists
+# ------------------------------
+# Lists - Basics
+# ------------------------------
 
 friends = ["apple", "34.67", "Orange", "Aero"]
-print(friends)
+print("Original list:", friends)
 
-friends[0] = "Grapes" # unlike strings lists are mutable
-print(friends[0])
-print(friends[1:4])
+# Lists are mutable (can be modified)
+friends[0] = "Grapes"
+print("After modifying index 0:", friends)
 
-# methods of lists
-# append
+print("Sliced list [1:4]:", friends[1:4])
+
+
+# ------------------------------
+# List Methods
+# ------------------------------
+
 friends = ["apple", "34.67", "Orange", "Aero"]
-friends.append("Satyawali") # append means add anything at the end of the lists
-print(friends)
 
-L1 = [1,8,7,2,21,15]
+# append() -> adds element at the end
+friends.append("Satyawali")
+print("After append:", friends)
 
-# #sort
-L1.sort() # sort the lists in ascending order and uupdates the list
-print(L1)
 
-# reverse
-L1.reverse() # updates the list to [15,21,2,7,8,1]
-print(L1)
+# ------------------------------
+# Numeric List Operations
+# ------------------------------
 
-# insert
-L1.insert(3,8) # this will add 8 at 3 index
-print(L1)
+L1 = [1, 8, 7, 2, 21, 15]
+print("Original L1:", L1)
 
-#pop
-L1.pop(2) # will delete value at index 2 and returns its vakue
-print(L1)
+# sort() -> sorts in ascending order
+L1.sort()
+print("After sort():", L1)
 
-# remove
-L1.remove(21) # will remove 21 from the list
-print(L1)
+# reverse() -> reverses the list
+L1.reverse()
+print("After reverse():", L1)
+
+# insert(index, value)
+L1.insert(3, 8)
+print("After insert at index 3:", L1)
+
+# pop(index) -> removes and returns element at index
+removed_value = L1.pop(2)
+print("After pop(2):", L1)
+print("Removed value:", removed_value)
+
+# remove(value) -> removes first occurrence of value
+L1.remove(21)
+print("After remove(21):", L1)
