@@ -1,85 +1,70 @@
-#variables
-a = 1
+# ------------------------------
+# Variables and Data Types
+# ------------------------------
 
-b = 2
+a = 1          # Integer
+b = 2.54       # Float
+c = "Karan"    # String
+d = True       # Boolean
+e = None       # NoneType
 
-c = 3
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
 
-#datatypes
 
-a = 1 # a is an integer
+# ------------------------------
+# Arithmetic Operators
+# ------------------------------
 
-b = 2.54 # b is a floating point number
+x = 34
+y = 4
+sum_result = x + y
+print("Sum:", sum_result)
 
-c = "Karan" # c is a string
 
-d = True # d is a boolean
+# ------------------------------
+# Assignment Operators
+# ------------------------------
 
-e = None # e is a none type variable
+value = 6
+value += 5
+print("After += :", value)
 
-# rules variables
 
-a = 65
-karan = 90
-_baka = 99
+# ------------------------------
+# Comparison Operators
+# ------------------------------
 
-#Operators
-karan = "satyawali"
-print(karan)
+print("5 <= 5:", 5 <= 5)
+print("7 != 8:", 7 != 8)
+print("2 == 3:", 2 == 3)
 
-a = 34 
-b = 4 
-c = a+b
-print(c)
 
-#assignment operators
-a = 4-2
-print(a)
+# ------------------------------
+# Logical Operators
+# ------------------------------
 
-b = 6 #actual value of b constant
-b += 5 # increment the value of b by 5 6+5 = 11
-print(b)
+print("True or False:", True or False)
+print("True and False:", True and False)
+print("Not False:", not False)
 
-#comparison operators
 
-d = 5<=5 # result will always be in boolean true or false only in comparison operators
-print(d)
+# ------------------------------
+# Type Casting
+# ------------------------------
 
-e = 7!=8
-print(e)
+num = 31.2
+converted = str(num)
+print("Converted type:", type(converted))
 
-f = 2==3
-print(f)
 
-# logical operators
+# ------------------------------
+# User Input
+# ------------------------------
 
-g = True or False
-print(g)
-
-# truth table of 'or'
-print("True or False is", True or False)
-print("True or True is ", True or True)
-print("False or True is", False or True)
-print("False or False is", False or False)
-
-#truth table of 'and'
-print("True and False is", True and False)
-print("True and True is ", True and True)
-print("False and True is", False and True)
-print("False and False is", False and False)
-
-print(not(False))
-
-#type function and typecasting
-a = 31.2
-b = str(a)
-t = type(b)
-print(t)
-
-# int(input functions)
-a = int(input("Enter number 1: "))
-b = int(input("Enter number 2: "))
-
-print("Number a is: ", a)
-print("Number b is: ", b)
-print("Sum is ", a + b)
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+print("Sum is:", num1 + num2)
