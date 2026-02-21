@@ -4,7 +4,7 @@ This folder contains the hands-on labs I have completed while learning cybersecu
 
 Cybersecurity is skill-based. Watching videos or reading notes is not enough. For every platform I practice on, I create a short documentation file explaining what the task was, which commands or tools were used, what problems I faced, and what I understood from it.
 
-The platforms currently included here are OverTheWire (Bandit), LabEx Linux and security labs, and Linux Journey. More platforms will be added as I progress.
+The platforms currently included here are OverTheWire (Bandit), LabEx Linux and security labs. More platforms will be added as I progress.
 
 Each subfolder represents a specific platform, and inside it, every markdown file corresponds to a completed lab or level. The documentation is intentionally kept concise and technical. It focuses on execution and understanding rather than copying walkthroughs.
 
