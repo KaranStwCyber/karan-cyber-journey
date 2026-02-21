@@ -1,5 +1,3 @@
-03_Labs
-
 This folder contains the hands-on labs I have completed while learning cybersecurity. The goal of this directory is to document practical work instead of just consuming theory.
 
 Cybersecurity is skill-based. Watching videos or reading notes is not enough. For every platform I practice on, I create a short documentation file explaining what the task was, which commands or tools were used, what problems I faced, and what I understood from it.
